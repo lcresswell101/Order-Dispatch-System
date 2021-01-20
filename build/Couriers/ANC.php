@@ -1,33 +1,38 @@
 <?php
 
-
 namespace Build\Couriers;
-
 
 class ANC implements Courier
 {
-
     /**
-     * @inheritDoc
+     * Method that would use courier supplied algorithm to generate unique
+     * consignment number
+     * @param float $number
+     * @return float
      */
     public function generateConsignmentNumber(float $number): float
     {
         // TODO: Implement generateConsignmentNumber() method.
+        return $number;
     }
 
     /**
-     * @inheritDoc
-     */
-    public function sendConsignmentNumbers(array $contact_details, array $consignments)
-    {
-        // TODO: Implement sendConsignmentNumbers() method.
-    }
-
-    /**
-     * @inheritDoc
+     * Method would return courier contact details, whether it be an email or ftp
+     * @return array
      */
     public function getContactDetails(): array
     {
         // TODO: Implement getContactDetails() method.
+        return [];
+    }
+
+    /**
+     * Method to send consignment method to courier using preferred method
+     * @param array $contact_details
+     * @param array $consignments
+     */
+    public function sendConsignmentNumbers(array $contact_details, array $consignments)
+    {
+        // TODO: Implement sendConsignmentNumbers() method.
     }
 }

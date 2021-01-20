@@ -1,0 +1,17 @@
+{
+    "name": "luke/order-dispatch-system",
+    "description": "An order dispatch system, for sending out customer orders with one of a number of different couriers",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Luke",
+            "email": "lcresswell101@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Build\\": "build/"
+        }
+    }
+}
